@@ -1,9 +1,3 @@
-### Backend usando Pyhton Flask y MongoDB con JWT y Bcrypt ###
-### Universidad Anahuac Mayab
-### 31-08-2024, Fabricio Suárez
-### Prog de Dispositivos Móviles
-
-
 #importamos todo lo necesario para que funcione el backend
 from flask import Flask, request, jsonify
 from flask_jwt_extended import JWTManager, create_access_token, jwt_required
@@ -77,6 +71,7 @@ def datos():
         return jsonify({"msg":"ususario encontrado", "usuario":usuario }),200
     else:
         return jsonify({"msg":"usuario no encontrado"}),404
+
 
 
 # En Python, cada archivo tiene una variable especial llamada __name__.
