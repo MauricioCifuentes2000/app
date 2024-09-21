@@ -5,5 +5,4 @@ load_dotenv()
 
 class Config:
     MONGO_URI = os.getenv("MONGO_URI")
-    SECRET_KEY ='eltokensefirma'
-    JWT_SECRET_KEY = os.getenv("eltokensefirma")
+    JWT_SECRET_KEY = os.getenv("JWT_SECRET")
