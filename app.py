@@ -11,6 +11,10 @@ from models import mongo, init_db
 from config import Config
 from bson.json_util import ObjectId
 from flask_bcrypt import Bcrypt
+from flask import Flask
+from flask_pymongo import PyMongo
+
+mongo = PyMongo(app)
 
 #Inicializamos la aplicación y usamos el config file
 app = Flask(__name__)
